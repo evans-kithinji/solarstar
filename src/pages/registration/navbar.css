@@ -65,3 +65,7 @@
   li{
     text-decoration: none;
   }
+  .bg {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?cs=srgb&dl=pexels-pixabay-356036.jpg&fm=jpg&_gl=1*1618on5*_ga*MTI3NDc4Mjg0Mi4xNjY2NDI4MTE5*_ga_8JE65Q40S6*MTY2NjQzMDYxNC4yLjAuMTY2NjQzMDYxNC4wLjAuMA..');
+  }

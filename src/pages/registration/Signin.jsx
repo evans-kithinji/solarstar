@@ -1,8 +1,10 @@
 import React from 'react'
 import "./signin.scss"
-import PropTypes from 'prop-types'
+import { Link} from 'react-router-dom'
+// import PropTypes from 'prop-types'
+// props
 
-const Signin = props => {
+const Signin = () => {
   return (
     <div className='body'>
     <div className='container con'>
@@ -35,7 +37,8 @@ const Signin = props => {
 						<p>Please sign up here</p>
 						
 					<div className='group button-group'>
-						<button className='ghost' name='signin'>Sign up</button>
+           
+						<button className='ghost' name='signin'>  <Link to='/signup'>Sign up </Link></button>
 					</div>
 					</div>
                    

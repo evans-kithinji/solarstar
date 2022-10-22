@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import Homee from "./pages/home/Homee"
+import Home from "./pages/home/Home"
 import Signup from "./pages/registration/Signup";
 import Signin from "./pages/registration/Signin";
 import {
@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
     <Routes>
       <Route path="/">
-       {/* <route index element={<Homee/>}/> */}
+       <Route index element={<Home/>}/>
         <Route path="Signup" element={<Signup/>}/>
         <Route path="Signin" element={<Signin/>}/>
       </Route>

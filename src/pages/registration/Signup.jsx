@@ -1,5 +1,6 @@
 import React from 'react'
 import "./signup.scss"
+import { Link} from 'react-router-dom'
 
 export const Signup = () => {
   return (
@@ -22,7 +23,7 @@ export const Signup = () => {
 
                 </div>
                 <div className='group input-group'>
-                    <button className='signup-btn'>sign up</button>
+                    <button className='signup-btn' > Sign up </button>
 
                 </div>
                 </div>
@@ -37,7 +38,7 @@ export const Signup = () => {
 						<p>Please login your personal info</p>
 						
 					<div className='group button-group'>
-						<button className='ghost' name='signin'>Sign in</button>
+						<button className='ghost' name='signin'><Link to="/signin">sign in</Link></button>
 					</div>
 					</div>
                    

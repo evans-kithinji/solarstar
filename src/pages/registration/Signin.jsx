@@ -1,11 +1,47 @@
 import React from 'react'
 import "./signin.scss"
+import "./navbar.css";
 import { Link} from 'react-router-dom'
 // import PropTypes from 'prop-types'
 // props
 
 const Signin = () => {
   return (
+   <div>
+         <div className="top">
+      <div className="topLeft">
+        <i className="topIcon fab fa-facebook-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-pinterest-square"></i>
+        <i className="topIcon fab fa-twitter-square"></i>
+      </div>
+      <div className="topCenter">
+        <ul className="topList">
+          <li className="topListItem">
+            <Link className="link" to="/">
+              Solarstar
+            </Link>
+          </li>
+           {/* <li className="topListItem">LOGOUT</li> */}
+        </ul>
+      </div>
+      <div className="topRight">      
+          <ul className="topList">
+            <li className="topListItem">
+              <Link className="link" to="/signin">
+                Sign In
+              </Link>
+            </li>
+            <li className="topListItem">
+              <Link className="link" to="/signup">
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+        
+        <i className="topSearchIcon fas fa-search"></i>
+      </div>
+    </div>
     <div className='body'>
     <div className='container con'>
         <div className='form-container sign-p-container'>
@@ -46,6 +82,7 @@ const Signin = () => {
         </div>
     </div>
     </div>
+    </div> 
   )
 }
 

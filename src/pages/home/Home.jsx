@@ -1,8 +1,50 @@
 import React from 'react'
+import "./navbar.css";
+import { Link} from 'react-router-dom'
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
  const Home = () => {
   return (
   <div>
+        <div className="top">
+      <div className="topLeft">
+        <i className="topIcon fab fa-facebook-square"></i>
+        <i className="topIcon fab fa-instagram-square"></i>
+        <i className="topIcon fab fa-pinterest-square"></i>
+        <i className="topIcon fab fa-twitter-square"></i>
+      </div>
+      <div className="topCenter">
+        <ul className="topList">
+          <li className="topListItem">
+            <Link className="link" to="/">
+              Solarstar
+            </Link>
+          </li>
+           {/* <li className="topListItem">LOGOUT</li> */}
+        </ul>
+      </div>
+      <div className="topRight">        
+          <ul className="topList">
+            <li className="topListItem">
+              <Link className="link" to="/signin">
+                Sign In
+              </Link>
+            </li>
+            <li className="topListItem">
+              <Link className="link" to="/signup">
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+        
+        <i className="topSearchIcon fas fa-search"></i>
+      </div>
+    </div>
     <form action="" method="post">
         <div>
            <input type="checkbox" id="television" name="television" value="television"/>
